@@ -1,3 +1,7 @@
+@font-face {
+	font-family:Pattaya;
+	src:url('fonts/Pattaya-Regular.ttf');
+}
 
 .row {
 	margin: 0 !important;
@@ -22,14 +26,20 @@ body {
 
 .head .row {
 	display: flex;
+	justify-content: center;
 	align-items: center;
-
 }
 
 .title h1 {
 	text-align: center;
 	margin: 0;
 	color: white;
+	font-family: Pattaya;
+	font-size: 40px;
+}
+
+.title h1.theme-title {
+	display: none;
 }
 
 .top-logo {
@@ -75,13 +85,69 @@ body {
 	background-color: rgba(45, 45, 68, .8);
 }
 
+.theme-detail {
+	display: none;
+	background-color: rgba(45, 45, 68, .8);
+	min-height: 70vh;
+	padding: 15px 0;
+}
+
+.menu-item {
+	background-color: white;
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+	margin: 10px;
+	cursor: pointer;
+	-webkit-transition: .6s;
+	transition: .6s;
+}
+
+.menu-item:hover,
+.menu-item.act-item {
+	color: white;
+	background-color: red; 
+}
+
+.tab-content {
+	color: white;
+	margin: 10px;
+	padding: 0 30px;
+	font-size: 18px;
+}
+
+.clear {
+	float: right;
+	padding: 5px 10px;
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	-webkit-transition: .6s;
+	transition: .6s;
+}
+
+.clear:hover {
+	color: white;
+	background-color: red; 
+}
+
+input.skip {
+	border: none;
+	background: none;
+	border-bottom: 1px solid white;
+	width: 50px;
+	outline: none;
+	text-align: center;
+}
+
+.example {
+	color: #00FF00;
+}
 
 /* REVISION */
 
 #revision {
-	display: none;
-	height: 1000px;
-	background-color: rgba(45, 45, 68, .8);
+	
 }
 
 

@@ -2,20 +2,31 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Posobie</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Funny English</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link id="slick-css" href="slick/slick.css" rel="stylesheet" />
+	<link id="slick-theme-css" href="slick/slick-theme.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
 </head>
 <body>
 
     <div class="container-fluid head">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-4 hidden-xs"><img src="img/top-logo.jpg" alt="" class="img-responsive top-logo" /></div>
-                <div class="col-md-9 col-sm-8 title"><h1><b>Funny English with Anastasia Nikolaevna</b></h1></div>
+                <div class="col-md-3 col-sm-4 hidden-xs">
+					<img src="img/top-logo.jpg" alt="" class="img-responsive top-logo" title="Back to the themes" />
+				</div>
+                <div class="col-md-9 col-sm-8 title">
+					<h1 id="main-title">Funny English with Anastasia Nikolaevna</h1>
+					<h1 class="theme-title" data-title="revision">Revision</h1>
+					<h1 class="theme-title" data-title="family">Family</h1>
+					<h1 class="theme-title" data-title="app">Appearance & Character</h1>
+					<h1 class="theme-title" data-title="act">Activities</h1>
+					<h1 class="theme-title" data-title="day">Day by day</h1>
+					<h1 class="theme-title" data-title="jobs">Jobs</h1>
+				</div>
             </div>
         </div>
     </div>
@@ -61,8 +72,80 @@
     </div>
 
 <!-- REVISION -->
-	<div class="container" id="revision">
-		
+	<div class="container theme-detail" id="revision">
+		<div class="row">
+			<div class="col-sm-3 menu">
+				<div class="menu-item act-item" data-toggle="tab" href="#rev-one">Fill in the gaps</div>
+				<div class="menu-item" data-toggle="tab" href="#rev-two">Write the pronoun</div>
+				<div class="menu-item" data-toggle="tab" href="#rev-three">Name the numbers</div>
+				<div class="menu-item" data-toggle="tab" href="#rev-four">Make the sentences</div>
+				<div class="menu-item back"><span class="glyphicon glyphicon-backward"></span>&nbsp;Back to the themes</div>
+			</div>
+			<div class="col-sm-9">
+				<div class="tab-content">
+					
+					<div id="rev-one" class="tab-pane fade in active">
+						<div class="clear">Clear</div>
+						<p>I <input class="skip" type="text" name="am" /> 17.</p>
+						<p>She <input class="skip" type="text" name="is" /> busy.</p>
+						<p><input class="skip" type="text" name="am" /> I right?</p>
+						<p>We <input class="skip" type="text" name="are" /> not at work, we are at home.</p>
+						<p>It <input class="skip" type="text" name="is" /> difficult.</p>
+						<p>What <input class="skip" type="text" name="is" /> your favourite colour?</p>
+						<p>Your house <input class="skip" type="text" name="is" /> big.</p>
+						<p><input class="skip" type="text" name="is" /> he a student?</p>
+						<p>These problems <input class="skip" type="text" name="are" /> serious.</p>
+						<p>I <input class="skip" type="text" name="am" /> ready.</p>
+						<p>He <input class="skip" type="text" name="is" /> not a teacher, he <input class="skip" type="text" name="is" /> a doctor.</p>
+						<p>Who <input class="skip" type="text" name="is" /> your favourite singer?</p>
+						<p>She <input class="skip" type="text" name="is" /> not English, she is American.</p>
+						<p>It <input class="skip" type="text" name="is" /> not far from here.</p>
+						<p>It <input class="skip" type="text" name="is" /> a good book.</p>
+						<p>She <input class="skip" type="text" name="is" /> my good friend.</p>
+						<p>They <input class="skip" type="text" name="are" /> not in town now, they <input class="skip" type="text" name="are" /> far away.</p>
+						<p><input class="skip" type="text" name="are" /> you 30?</p>
+						<p><input class="skip" type="text" name="is" /> this your book?</p>
+						<p><input class="skip" type="text" name="are" /> we late?</p>
+						<p><input class="skip" type="text" name="is" /> he your friend?</p>
+						<p>It <input class="skip" type="text" name="is" /> a nice day today.</p>
+						<p><input class="skip" type="text" name="is" /> the book interesting?</p>
+						<p>It <input class="skip" type="text" name="is" /> cold today.</p>
+						<p>I <input class="skip" type="text" name="am" /> at home now.</p>
+						<p>They <input class="skip" type="text" name="are" /> French.</p>
+						<p>How many students <input class="skip" type="text" name="are" /> there in this class?</p>
+						<p>There <input class="skip" type="text" name="is" /> a pen on the desk.</p>
+						<p>What <input class="skip" type="text" name="is" /> your address?</p>
+						<p>My name <input class="skip" type="text" name="is" /> Ann.</p>
+						<p>We <input class="skip" type="text" name="are" /> from Russia.</p>
+						<p>I <input class="skip" type="text" name="am" /> OK, thanks.</p>
+					</div>
+					
+					<div id="rev-two" class="tab-pane fade">
+						<div class="clear">Clear</div>
+						<p>e.g. Martha (<span class="example">she</span>)</p>
+						<br />
+						<p>two cats (<input class="skip" type="text" name="they" />)</p>
+						<p>a pen (<input class="skip" type="text" name="it" />)</p>
+						<p>my mother (<input class="skip" type="text" name="she" />)</p>
+						<p>my friend Lisa (<input class="skip" type="text" name="she" />)</p>
+						<p>me and my sister (<input class="skip" type="text" name="we" />)</p>
+						<p>a ship (<input class="skip" type="text" name="it" />)</p>
+						<p>you and this girl (<input class="skip" type="text" name="you" />)</p>
+						<p>a dog (<input class="skip" type="text" name="it" />)</p>
+						<p>my teachers (<input class="skip" type="text" name="they" />)</p>
+						<p>my brother (<input class="skip" type="text" name="he" />)</p>
+						<p>those flowers (<input class="skip" type="text" name="they" />)</p>
+						<p>a book (<input class="skip" type="text" name="it" />)</p>
+						<p>my friend Mike (<input class="skip" type="text" name="he" />)</p>
+						<p>that boy (<input class="skip" type="text" name="he" />)</p>
+					</div>
+					
+					<div id="rev-four" class="tab-pane fade">
+						
+					</div>
+				</div><!-- end tab-content -->
+			</div>
+		</div>
 	</div>
 
 
@@ -70,5 +153,10 @@
         <span>All rights reserved &copy; 2018</span>
     </div>
 
+	<script src="js/jquery-2.2.0.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
