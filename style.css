@@ -144,6 +144,40 @@ input.skip {
 	color: #00FF00;
 }
 
+.sentences {
+	
+}
+
+.sent-wrap {
+	
+}
+
+.sent-item:not(:first-of-type) {
+	display: none;
+}
+
+.word.droppable,
+.word.draggable {
+	width: 120px;
+	height: 80px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.word.droppable {
+	border: 2px solid white;
+}
+
+.word.draggable {
+	text-align: center;
+	padding-top: 23px;
+	border: 2px solid red;
+	cursor: pointer;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 2px 0;
+}
+
 /* REVISION */
 
 #revision {
@@ -160,4 +194,13 @@ input.skip {
 	color: white;
 	font-size: 24px;
 	box-shadow: 0 2px 5px 5px #2D2D44;
+}
+
+
+/* МЕДИА */
+
+@media screen and (max-width: 767px) {
+	.tab-content {
+		padding: 0;
+	}
 }
