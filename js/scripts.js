@@ -52,27 +52,24 @@ $(document).ready(function(){
 	  wrapper.find('.word.draggable').draggable({
 		 snap: '.droppable',
 		 snapMode: 'inner',
-		 snapTolerance: 40
+		 snapTolerance: 20
 	  });
   
 	  wrapper.find('.word.droppable').droppable({
 		drop: function(event, ui) {
-		  if($(this).attr('name') == ui.draggable.attr('value')) {
-			 $(this).attr('value','yes');
+		  if($(this).attr('data-name') == ui.draggable.attr('data-value')) {
+			 $(this).attr('data-value','yes');
 			 ui.draggable.attr('data-title','placed');
 		  }
 		  var allTrue = true;
 		  wrapper.find('.word.droppable').each(function(index, elem){
-			if($(elem).attr('value') != 'yes'){
+			if($(elem).attr('data-value') != 'yes' || ui.draggable.attr('data-title') != 'placed'){
 			  allTrue = false;
 			}
 		  });
+		  console.log(allTrue);
 		  if(allTrue == true){
-			wrapper.find('.word.draggable').each(function(){
-			  if($(this).attr('data-title') == 'placed') {
-				$(this).css('border-color','#00FF00');
-			  }
-			});
+			wrapper.find('.word.draggable').css('border-color','#00FF00');
 			setTimeout(function(){
 				var greeting = ['Great!', 'You are right!', 'Bingo!', 'Good!', 'Let\'s make English great again!'];
 				function getRandomInt(min, max) {
@@ -86,8 +83,9 @@ $(document).ready(function(){
 		  }
 		},
 		out: function(event, ui) {
-		  $(this).attr('value','no');
+		  $(this).attr('data-value','no');
 		  ui.draggable.css('border-color','red');
+		  ui.draggable.attr('data-title','');
 		}
 	  });
 	}
