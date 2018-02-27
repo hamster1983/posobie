@@ -59,15 +59,13 @@ $(document).ready(function(){
 		drop: function(event, ui) {
 		  if($(this).attr('data-name') == ui.draggable.attr('data-value')) {
 			 $(this).attr('data-value','yes');
-			 ui.draggable.attr('data-title','placed');
 		  }
 		  var allTrue = true;
 		  wrapper.find('.word.droppable').each(function(index, elem){
-			if($(elem).attr('data-value') != 'yes' || ui.draggable.attr('data-title') != 'placed'){
+			if($(elem).attr('data-value') != 'yes'){
 			  allTrue = false;
 			}
 		  });
-		  console.log(allTrue);
 		  if(allTrue == true){
 			wrapper.find('.word.draggable').css('border-color','#00FF00');
 			setTimeout(function(){
@@ -83,9 +81,9 @@ $(document).ready(function(){
 		  }
 		},
 		out: function(event, ui) {
-		  $(this).attr('data-value','no');
-		  ui.draggable.css('border-color','red');
-		  ui.draggable.attr('data-title','');
+		  if($(this).attr('data-name') == ui.draggable.attr('data-value')) {
+			 $(this).removeAttr('data-value');
+		  }
 		}
 	  });
 	}
