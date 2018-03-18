@@ -144,16 +144,12 @@ input.skip {
 	text-align: center;
 }
 
+input.skip[name$="got"] {
+	width: 90px;
+}
+
 .example {
 	color: #00FF00;
-}
-
-.sentences {
-	
-}
-
-.sent-wrap {
-	
 }
 
 .sent-item:not(:first-of-type) {
@@ -256,8 +252,8 @@ input.skip {
 }
 
 .clock .one {
-	right: 60px;
-	top: 8%;
+	right: 58px;
+	top: 9%;
 }
 
 .clock .two {
@@ -266,8 +262,8 @@ input.skip {
 }
 
 .clock .three {
-	right: 5px;
-	top: 48%;
+	right: 6px;
+	top: 46%;
 }
 
 .clock .four {
@@ -276,18 +272,18 @@ input.skip {
 }
 
 .clock .five {
-	right: 60px;
-	bottom: 8%;
+	right: 62px;
+	bottom: 7%;
 }
 
 .clock .six {
-	bottom: 5px;
-	left: 49%;
+	bottom: 1px;
+	left: 48.5%;
 }
 
 .clock .seven {
-	left: 60px;
-	bottom: 8%;
+	left: 62px;
+	bottom: 7%;
 }
 
 .clock .eight {
@@ -296,8 +292,8 @@ input.skip {
 }
 
 .clock .nine {
-	left: 5px;
-	top: 48%;
+	left: 6px;
+	top: 46%;
 }
 
 .clock .ten {
@@ -312,7 +308,7 @@ input.skip {
 
 .clock .twelve {
 	top: 5px;
-	left: 47%;
+	left: 46%;
 }
 
 .clock .inner {

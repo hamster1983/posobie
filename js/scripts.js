@@ -11,9 +11,13 @@ $(document).ready(function(){
 		$('#themes, #main-title').slideDown(); //и возвращаемся к списку тем и главному заголовку
 	});
 	
-	$('.menu-item').not($('.menu-item.back')).click(function(){ //при клике на пункт меню кроме "назад"
-		$(this).addClass('act-item'); //добавляем ему класс "активный"
-		$('.menu-item').not($(this)).removeClass('act-item'); //удаляем этот класс у других пунктов
+
+	$('.theme-detail').each(function(){
+		var themeId = $(this).attr('id'); //получаем id раздела
+		$('#'+themeId+' .menu-item').not($('.menu-item.back')).click(function(){ //при клике на пункт меню раздела кроме "назад"
+			$(this).addClass('act-item'); //добавляем ему класс "активный"
+			$('#'+themeId+' .menu-item').not($(this)).removeClass('act-item'); //удаляем этот класс у других пунктов раздела
+		});
 	});
 
 
