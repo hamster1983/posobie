@@ -55,6 +55,7 @@ body {
 
 #themes .col-md-4 {
 	position: relative;
+	border: 1px solid transparent;
 }
 
 .rasporka {
@@ -91,7 +92,7 @@ body {
 .theme-detail {
 	display: none;
 	background-color: rgba(45, 45, 68, .8);
-	min-height: 70vh;
+	/*min-height: 80vh;*/
 	padding: 15px 0;
 }
 
@@ -193,12 +194,229 @@ input.skip {
 	}
 }
 
+
 /* REVISION */
 
 #revision {
 	
 }
 
+
+/* DAY BY DAY */
+
+.clock-wrapper {
+	text-align: center;
+}
+
+.clock-wrapper h1 {
+	display: none;
+	margin-top: 150px;
+	font-size: 50px;
+}
+
+.time-question {
+	display: none;
+}
+
+.time-text {
+	color: black;
+	text-align: center;
+}
+
+.clock-btn {
+	cursor: pointer;
+	color: white;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	padding: 7px;
+	font-size: 15px;
+    background: -webkit-linear-gradient(bottom left, black, red);
+    background: -o-linear-gradient(bottom left, black, red);
+    background: linear-gradient(to top right, black, red);
+}
+
+.clock-btn:active {
+    background: -webkit-linear-gradient(top right, black, red);
+    background: -o-linear-gradient(top right, black, red);
+    background: linear-gradient(to bottom left, black, red);
+}
+
+.clock {
+	position: relative;
+	margin: 30px auto;
+	border: 3px solid white;
+	border-radius: 50%;
+	width: 240px;
+	height: 240px;
+}
+
+.clock .number {
+	position: absolute;
+}
+
+.clock .one {
+	right: 60px;
+	top: 8%;
+}
+
+.clock .two {
+	top: 24%;
+	right: 20px;
+}
+
+.clock .three {
+	right: 5px;
+	top: 48%;
+}
+
+.clock .four {
+	bottom: 22%;
+	right: 22px;
+}
+
+.clock .five {
+	right: 60px;
+	bottom: 8%;
+}
+
+.clock .six {
+	bottom: 5px;
+	left: 49%;
+}
+
+.clock .seven {
+	left: 60px;
+	bottom: 8%;
+}
+
+.clock .eight {
+	bottom: 22%;
+	left: 22px;
+}
+
+.clock .nine {
+	left: 5px;
+	top: 48%;
+}
+
+.clock .ten {
+	top: 24%;
+	left: 20px;
+}
+
+.clock .eleven {
+	top: 8%;
+	left: 60px;
+}
+
+.clock .twelve {
+	top: 5px;
+	left: 47%;
+}
+
+.clock .inner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform-origin: 2px 2px;
+}
+
+.clock .big {
+	width: 90px;
+	border: 2px solid red;
+	transform: rotate(-90deg);
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+.clock .small {
+	width: 70px;
+	border: 3px solid blue;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes one-big {
+	100% { transform: rotate(300deg); }
+}
+@keyframes one-small {
+	100% { transform: rotate(32.5deg); }
+}
+
+@keyframes two-big {
+	0% { transform: rotate(300deg); }
+	100% { transform: rotate(1080deg); }
+}
+@keyframes two-small {
+	0% { transform: rotate(32.5deg); }
+	100% { transform: rotate(97.5deg); }
+}
+
+@keyframes three-big {
+ 	0% { transform: rotate(720deg); }
+	100% { transform: rotate(1320deg); }
+}
+@keyframes three-small {
+	0% { transform: rotate(97.5deg); }
+	100% { transform: rotate(147.5deg); }
+}
+
+@keyframes four-big {
+	0% { transform: rotate(1320deg); }
+	100% { transform: rotate(2130deg); }
+}
+@keyframes four-small {
+	0% { transform: rotate(147.5deg); }
+	100% { transform: rotate(215deg); }
+}
+
+@keyframes five-big {
+	0% { transform: rotate(2130deg); }
+	100% { transform: rotate(2610deg); }
+}
+@keyframes five-small {
+	0% { transform: rotate(215deg); }
+	100% { transform: rotate(255deg); }
+}
+
+@keyframes six-big {
+	0% { transform: rotate(2610deg); }
+	100% { transform: rotate(3420deg); }
+}
+@keyframes six-small {
+	0% { transform: rotate(255deg); }
+	100% { transform: rotate(322.5deg); }
+}
+
+@keyframes seven-big {
+	0% { transform: rotate(3420deg); }
+	100% { transform: rotate(4020deg); }
+}
+@keyframes seven-small {
+	0% { transform: rotate(322.5deg); }
+	100% { transform: rotate(372.5deg); }
+}
+
+@keyframes eight-big {
+	0% { transform: rotate(4020deg); }
+	100% { transform: rotate(4830deg); }
+}
+@keyframes eight-small {
+	0% { transform: rotate(372.5deg); }
+	100% { transform: rotate(440deg); }
+}
+
+@keyframes nine-big {
+	0% { transform: rotate(4830deg); }
+	100% { transform: rotate(5790deg); }
+}
+@keyframes nine-small {
+	0% { transform: rotate(440deg); }
+	100% { transform: rotate(520deg); }
+}
 
 /* ФУТЕР */
 
