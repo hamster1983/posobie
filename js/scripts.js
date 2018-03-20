@@ -61,7 +61,7 @@ $(document).ready(function(){
 	});
 	
 
-	//проверка составления предложений из слов
+	//проверка составления предложений из слов; подстановка картинок
 	var greetingAlert = function() {
 		var greeting = ['Great!', 'You are right!', 'Bingo!', 'Brilliantly!', 'Good!', 'Let\'s make English great again!', 'Excellent!'];
 		function getRandomInt(min, max) {
@@ -72,27 +72,27 @@ $(document).ready(function(){
 	}
 
 
-	var placeWord = function(wrapper) {
+	var placeBlock = function(wrapper) {
 	
-	  wrapper.find('.word.draggable').draggable({
+	  wrapper.find('.word.draggable, .pic.draggable').draggable({
 		 snap: '.droppable',
 		 snapMode: 'inner',
 		 snapTolerance: 20
 	  });
   
-	  wrapper.find('.word.droppable').droppable({
+	  wrapper.find('.word.droppable, .pic.droppable').droppable({
 		drop: function(event, ui) {
 		  if($(this).attr('data-name') == ui.draggable.attr('data-value')) {
 			 $(this).attr('data-value','yes');
 		  }
 		  var allTrue = true;
-		  wrapper.find('.word.droppable').each(function(index, elem){
+		  wrapper.find('.word.droppable, .pic.droppable').each(function(index, elem){
 			if($(elem).attr('data-value') != 'yes'){
 			  allTrue = false;
 			}
 		  });
 		  if(allTrue == true){
-			wrapper.find('.word.draggable').css('border-color','#00FF00');
+			wrapper.find('.word.draggable, .pic.draggable').css('border-color','#00FF00');
 			setTimeout(function(){
 				greetingAlert();
 				wrapper.css('display','none');
@@ -109,8 +109,10 @@ $(document).ready(function(){
 	}
 	
 	$('.sent-item').each(function(){
-		placeWord($(this));
+		placeBlock($(this));
 	});
+
+	placeBlock($('.pic-block'));
 
 
 	//часы

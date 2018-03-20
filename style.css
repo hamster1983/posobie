@@ -197,6 +197,37 @@ input.skip[name$="got"] {
 	
 }
 
+/* APPEARANCE */
+
+.pic.droppable,
+.pic.draggable {
+	width: 150px;
+	height: 180px;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	margin: 2px 0;
+}
+
+.pic.droppable {
+	border: 2px solid white;
+	padding: 10px;
+	font-size: 12px;
+}
+
+.pic.droppable b {
+	color: #00FF00;
+}
+
+.pic.draggable {
+	border: 2px solid red;
+	cursor: pointer;
+}
+
+.pic-block:not(:first-of-type) {
+	display: none;
+}
+
 
 /* DAY BY DAY */
 
