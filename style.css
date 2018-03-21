@@ -190,6 +190,12 @@ input.skip[name$="got"] {
 	}
 }
 
+@media screen and (max-width: 767px) {
+	.tab-content {
+		padding: 0;
+	}
+}
+
 
 /* REVISION */
 
@@ -445,6 +451,128 @@ input.skip[name$="got"] {
 	100% { transform: rotate(520deg); }
 }
 
+
+/* JOBS */
+
+.job-wrapper {
+	background-color: white;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.job-wrapper [class^="col"] {
+	padding: 20px 0;
+}
+
+.job-item {
+    max-width: 270px;
+    border: 2px solid gray;
+    position: relative;
+    padding: 10px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    color: #2D2D44;
+    background: linear-gradient(to bottom, white, silver);
+}
+
+.job-item:before {
+    content: '';
+    display: block;
+    width: 0;
+	height: 0;
+	border-left: 44px solid transparent;
+	border-right: 44px solid transparent;
+	border-bottom: 38px solid gray;
+    position: absolute;
+    bottom: 23px;
+    right: -2px;
+    z-index: 1;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.job-item:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    transform: skew(-30deg);
+    position: absolute;
+    right: -19px;
+    bottom: -2px;
+}
+
+.job-item input.skip {
+	background-color: rgba(45, 45, 68, .8);
+	width: 170px;
+	margin-top: 15px;
+	color: white;
+}
+
+.job-item.one {
+	top: -15px;
+	left: 20px;
+}
+
+.job-item.three {
+	bottom: -15px;
+	left: 60px;
+}
+
+.job-item.four {
+	top: -20px;
+	left: 60px;
+}
+
+.job-item.five {
+	bottom: -20px;
+}
+
+.job-item.six {
+	left: 10px;
+}
+
+.job-item.seven {
+	left: -40px;
+}
+
+.job-item.eight {
+	left: 100px;
+}
+
+.job-item.nine {
+	top: -20px;
+}
+
+.job-item.eleven {
+	left: 40px;
+}
+
+.job-item.twelve {
+	left: 50px;
+}
+
+.job-item.thirteen {
+	left: -70px;
+}
+
+.job-item.fourteen {
+	left: 20px;
+}
+
+@media screen and (max-width: 991px) {
+	.job-item {
+		left: 0 !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.job-item {
+		margin: 10px auto;
+	}
+}
+
 /* ФУТЕР */
 
 .footer {
@@ -454,13 +582,4 @@ input.skip[name$="got"] {
 	color: white;
 	font-size: 24px;
 	box-shadow: 0 2px 5px 5px #2D2D44;
-}
-
-
-/* МЕДИА */
-
-@media screen and (max-width: 767px) {
-	.tab-content {
-		padding: 0;
-	}
 }
