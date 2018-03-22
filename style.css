@@ -156,6 +156,11 @@ input.skip[name$="got"] {
 	display: none;
 }
 
+.sent-item h1 {
+	text-align: center;
+	margin-top: 50px;
+}
+
 .word.droppable,
 .word.draggable {
 	width: 120px;
@@ -176,6 +181,7 @@ input.skip[name$="got"] {
 	font-size: 24px;
 	font-weight: bold;
 	margin: 2px 0;
+	vertical-align: top;
 }
 
 @media screen and (max-width: 1199px) {
